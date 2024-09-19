@@ -36,7 +36,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://www.intercell.events/
+  https://www.snickers.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   home-page  
@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   event-page  
-  <img src="readme-images/page2_phone.png" width="375px" alt="event-page">
+  <img src="readme-images/page2_phone.png" width="375px" alt="product-page">
  
 </details>
 
@@ -68,7 +68,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/structuur_main.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -90,6 +90,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  basis structuur gaat nog redelijk, moeite met overzicht houden en structuur volgorde.
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -99,6 +101,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+vragen:
+
+1. opbouw code, hoe werk ik het beste door waarbij ik een goede structuur opbouw?
+
+2. verschillende buttons stylen met zo min mogelijk code?
+
+3. hamburger menu uitklappen?
+
+4. play button aan video koppelen?
+
+
+
 
 
   ### Verslag van meeting
