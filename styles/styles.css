@@ -1,11 +1,18 @@
+
+
+
 :root {
-  --primary-color: #410C00;
+  color-scheme:light dark;
+
+  --primary-color: light-dark(#410C00, #210082);
   --button-color: #f0b243;
   --primary-button-color: #210082;
-  --background-color: #ffffff;
+  --background-color: light-dark(white, grey);
   --text-color: #333333;
+  --text-color2: white;
   --menu-link-color: white;
   --menu-link-hover-color: #ffcc00;
+  --menu-link-hover-color2: #210082;
   --padding: 1em;
   --border-radius: 50em;
   --font-size-large: 1.5em;
@@ -29,12 +36,86 @@
     padding: 1em;
     position: relative; 
   }
+
+
+  footer{
+    background: var(--primary-color);
+    color: var(--text-color2);
+  }
   
+  footer a{
+    background: none;
+    padding: 0;
+
+  }
+  
+  footer a:hover{
+    background: none;
+    color: var(--button-color);
+    
+  
+  }
+
+  footer section:nth-of-type(1) {
+    background-color: #f0b243;
+    color: var(--text-color2);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  footer section:nth-of-type(1) nav {
+    flex-direction: row;
+    transform: none;
+    position: relative;
+  }
+
+  footer nav section:nth-of-type(1) a {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* snicker section boven footer */
+main section:nth-of-type(5) {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/snicker.png'); 
+    background-size: cover;
+    background-position: center;
+  }
+
+  main section:nth-of-type(5) img{
+    width: 20em; /
+}
+
+
+  footer img {
+    max-width: 6.05em;
+
+  }
+
+
+
+
+
+
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  
+  
+
+  
+  
+  
+  
+  
   
   h1 {
     margin: 0;
@@ -72,14 +153,35 @@
     padding-top: 1.5em;
   }
 
-  article {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 3em;
-    }
+
+
+
+/* oneze fasvorieten-snickers-products */
+
+
+ main section:nth-of-type(3){
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+ }
+
+ main section:nth-of-type(3) > h2 {
+  width: 100%;
+  flex-basis: 100%;
+  
+}
+
+main section:nth-of-type(3) > article {
+  flex: 1; 
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
   article img {
   order: -2;
@@ -88,6 +190,26 @@
   height: 20em;
   width: auto;
   }
+
+  article img:hover{
+  animation-name: snicker-product;
+  animation-duration: 1s;
+  scale:110%;
+}
+
+
+
+
+
+@keyframes snicker-product {
+  0%{
+    scale:100%;
+  }
+  100%{
+    scale:110%;
+  }
+
+}
 
 
   
@@ -123,15 +245,6 @@
     overflow: hidden;
   }
   
-  /* main section video:first-of-type {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: -1; 
-  } */
 
   
   main section button:first-of-type {
@@ -172,7 +285,8 @@
   main section:nth-of-type(2) {
     background-color: #f0b243;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 2em; 
 
   }
@@ -181,28 +295,57 @@
  /* creamy section afbeelding */
   main section:nth-of-type(2) img {
     order: -1;
-    width: 50%;
+    max-width: 20em;
+    display: block;
     align-self: center;
-    animation: moveUpDown 3s ease-in-out infinite;
+    animation: moveUpDown ease-in-out infinite;
+    animation-duration: 3s;
   }
+
+
 
 
   /* snicker afbeelding animation https://codepen.io/boodaah71/pen/ZEEzrPw?editors=1100*/
   @keyframes moveUpDown {
-    0%, 100% {
+    0%{
       transform: translateY(0); 
     }
     50% {
-      transform: translateY(-20px); 
+      transform: translateY(-1.5em); 
+    }
+    100%{
+      transform:translateY(0);
     }
   }
+
+
+  @media screen and (min-width: 768px) {
+    main section:nth-of-type(2){
+      align-items: center;
+      
+    }
+    
+    }
+
+
+
+
+  
+  
+  
+  
+  
+  
   
   section h2 {
     color: var(--background-color);
   }
 
 
-  
+
+ main section:nth-of-type(2) a{
+  width: 7em;
+ }
 
 
 
@@ -224,7 +367,7 @@
     z-index: 1;
   }
 
-  main section a:first-of-type{
+  main section:first-of-type a{
     z-index: 1;
   }
 
@@ -236,10 +379,10 @@
     
   }
 
-
+/* skewx? andere oploosing zoeken! */
   a:hover{
     background-color: var(--background-color);
-    transform: skewX(-45deg);
+
 
     color:var(--primary-button-color)
   } 
@@ -255,3 +398,166 @@
     max-width: 7.5em; 
     background-color: transparent;
   }
+
+
+
+  /* website is nu light en moet ook donker (dark moe) worden */
+
+
+  /* todo:
+  -display flex wanneer scherm groter wordt fixen (prio)
+  -hamburger menu fixen
+  -footer fixen
+  -dark mode afmaken 
+  
+  
+  */
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 999; 
+}
+
+header > a:first-of-type {
+  order: -1; 
+}
+
+header > button {
+  order: 1; 
+  display: block;
+}
+
+nav {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--primary-color);
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  z-index: 998; 
+}
+
+nav[data-visible="true"] {
+  transform: translateX(0%);
+}
+
+nav button {
+  align-self: flex-end;
+  margin-bottom: 1em;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center; 
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 0;
+}
+
+nav a img{
+  width: auto;
+  height: 2em;
+}
+
+nav a:hover{
+  color:var(--menu-link-hover-color);
+}
+
+
+@media (min-width: 38em) {
+  header > button {
+  display: none;
+  }
+
+  nav {
+    position: static;
+    transform: none;
+    background: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2em;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1em;
+  }
+
+
+}
+
+@media (min-width: 57em) {
+  nav a {
+    flex-direction: row;
+  }
+}
+
+
+header a{
+  background: transparent;
+  padding: 0;
+}
+
+header a:hover {
+  
+  
+background: transparent;
+}
+
+
+header a img{
+  max-width: 6.05em;
+}
+
+
+
+main section:nth-of-type(5){
+  background-color: var(--primary-color);
+  color: var(--text-color2);
+  text-align: center;
+
+
+}
+
+main section:nth-of-type(5) img{
+  position: relative;
+  object-fit: cover; 
+  max-width: 15em;
+}
+
+
+
+
+
+
+
+
+/* screen reader help */
+
+button:focus {
+  outline: 2px solid green;
+  
+}

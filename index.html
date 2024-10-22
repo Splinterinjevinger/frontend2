@@ -9,33 +9,39 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-   <header>
-        <nav>
-          <h1>
-            <a href="#">
-              <img src="images/Snickers-logo.svg" alt="Snickers Logo">
-            </a>
-          </h1>
-          <button>
-            <img src="images/hamburger icon.svg" alt="Hamburger menu icon">
-           menu
-          </button>
-        </nav>
-   </header>
+  <header>
+    <a href="#">
+      <img src="images/Snickers-logo.svg" alt="Snickers Logo">
+    </a>
+    <button>
+      <img src="images/hamburger icon.svg" alt="Menu openen">
+      menu
+    </button>
+    <nav>
+      <button>
+        <img src="images/close-icon.svg" alt="Menu sluiten">
+        sluiten
+      </button>
+      <ul>
+        <li><a href="#">onze producten</a></li>
+        <li><a href="#">recepten</a></li>
+        <li><a href="#">ons verhaal</a></li>
+      </ul>
+    </nav>
+  </header>
    <main>  
     <section>
+        <button onclick="togglePlayPause(this)">
+          <img src="images/play button.svg" alt="Play button">
+        </button>
+          
+        <h2><small>Trek?</small> je bent jezelf niet als je trek hebt.</h2>
+        
+        <a href="#">Producten bekijken</a> 
         <video autoplay muted loop>
           <source src="images/snickers_video.mp4" type="video/mp4" alt="video van snicker die in tweeen wordt gebroken">
           Je browser ondersteunt het afspelen van video niet.
-        </video>
-        
-        <button>
-          <img src="images/play button.svg" alt="Play video">
-        </button>
-          
-        <h2>Trek? je bent jezelf niet als je trek hebt.</h2>
-        
-        <a href="#">Producten bekijken</a>       
+        </video>      
     </section>
 
     <section>
@@ -51,40 +57,49 @@
             <a href="#">kies mij</a>
             <img src="images/name_3bfe48a9a1fa14659260f17edd00a2bac27eb1fc.avif" alt="afbeelding snicker original verpakking">
         </article>
+
+        <article>
+           <h3>snickers original</h3>
+           <a href="#">kies mij</a>
+           <img src="images/name_3bfe48a9a1fa14659260f17edd00a2bac27eb1fc.avif" alt="afbeelding snicker original verpakking">
+        </article>
+
+        <article>
+           <h3>snickers original</h3>
+           <a href="#">kies mij</a>
+           <img src="images/name_3bfe48a9a1fa14659260f17edd00a2bac27eb1fc.avif" alt="afbeelding snicker original verpakking">
+        </article>
     </section>
 
     <section>
         <img src="images/SN_NL_snickers_ingredients_1500x1810.avif" alt="afbeelding met tekst, pinda's, karamel, noga, melkchocolade en het Snickers logo">
     </section>
-
-    <section>
-        <img src="images/example-snickers-half.jpg" alt="afbeelding van halve snicker waarbij inhoud zichtbaar is">
-    </section>
-
+  
     <section>
         <h2>snickers ice cream</h2>
         <h3>tijd om te chillen</h3>
         <p>net toen je dacht dat snickers niet cooler kon</p>
         <a href="#">meer bekijken</a>
+        <img src="images/snicker.png" alt="afbeelding van halve snicker waarbij inhoud zichtbaar is">
     </section>
    </main>  
     <footer>
-        <h2>
-            <a href="#">
-              <img src="#" alt="Snickers Logo">
+     <section>
+        <nav aria-label="footer nav">
+            <a href="#" aria-label="logo in de footer">
+              <img src="images/Snickers-logo.svg" alt="Snickers Logo">
             </a>
-        </h2>
-        <nav>
             <a href="#">contact en help</a>
             <a href="#">ons verhaal</a>
             <a href="#">waar te koop</a>
         </nav>
+     </section>
+     
+     <section>
+            <h3 aria-label="verwijst naar social media links">volg ons op</h3>
+     </section>
 
-        <section>
-            <h3>volg ons op</h3>
-        </section>
-
-        <ul>
+        <ul aria-label="links in de footer">
             <li><a href="#">opmerking voor ouders</a></li>
             <li><a href="#">wet moderne slavernij</a></li>
             <li><a href="#">Cookie-instellingen</a></li>
@@ -103,10 +118,42 @@
 
         <h3>bekijk meer merken van mars wrigley.</h3>
 
-        <a href="#">bekijk alles</a>
+        <a href="#" aria-label="knop die verwijst naar pagina waar alle snicker producten te zien zijn">bekijk alles</a>
     </footer>
       
     <script src="scripts/script.js"></script>
 
 </body>
 </html>
+
+
+
+<!-- alignemnt text fixen links of midden? -->
+
+<!-- trek? en tijd om te chillen. moeten klein worden. hoe? small -->
+
+<!-- hamburger begrijpbaar fixen -->
+
+<!-- play button fixen. afbeelding play/ stop fixen -->
+
+
+
+
+
+
+
+<!-- creamy section juist flexboxen -->
+
+<!-- afbeelding pindas / tekst los en maskere, ul met 4 ptjes (met een mask) / afbeelding png maken -->
+
+<!-- ice cream sectie boven footer--afbeelding achter teskt -->
+
+<!-- eerste footer flexbox fixen -->
+
+<!-- tweedde footer flexbox fixen -->
+
+
+
+
+
+
