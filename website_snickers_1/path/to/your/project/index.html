@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Calculator</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK9eU8q9XVQwJIc3SgP65xsZExf_X6BMQ&libraries=places"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="routeCalculator">
+        <div id="step1" class="step">
+            <div id="inputFields">
+                <input id="start" class="locationField" type="text" placeholder="Ophaallocatie" aria-label="Ophaallocatie">
+                <input id="end" class="locationField" type="text" placeholder="Bestemming" aria-label="Bestemming">
+            </div>
+            <button id="calculateButton" onclick="calculateRoute()">Bereken prijs</button>
+        </div>
+
+        <div id="step2" class="step" style="display: none;">
+            <div id="result">
+                <div id="loader" class="loader" style="display: none;"></div>
+                <div id="output" aria-live="polite"></div>
+                <div id="priceInfo"></div>
+            </div>
+            <button id="bookRideButton" onclick="showBookingForm()">Boek deze rit</button>
+            <button onclick="goToStep(1)">Terug naar locaties</button>
+        </div>
+
+        <div id="step3" class="step" style="display: none;">
+            <div id="bookingForm">
+                <!-- Vervang dit met je werkelijke Contact Form 7 shortcode -->
+                [contact-form-7 id="bd4c1a6" title="Contactformulier 1"]
+            </div>
+            <button onclick="goToStep(2)">Terug naar prijsoverzicht</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

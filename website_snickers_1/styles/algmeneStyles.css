@@ -1,0 +1,475 @@
+
+:root {
+
+  /* Kleuren */
+  color-scheme:light dark;
+  --primary-color: #A0522D; 
+  --secondary-color: #A0522D; 
+  --accent-color: #f0b243; 
+  --background-color: #ffffff; 
+  --background-dark-color: #1a1a1a; 
+  --text-color: #333333; 
+  --text-color2: #ffffff;
+  --text-color-light: #ffffff;
+  --link-color: #210082; 
+  --link-hover-color: #ffcc00; 
+  --button-color: #210082; 
+  --button-hover-color: #ffcc00; 
+
+  /* Typografie */
+  --heading-font-family: 'BebasNeue Regular', sans-serif; 
+  --body-font-family: 'Arial', sans-serif; 
+
+  /* fonts grootte */
+  --font-size-large: 2.2em; 
+  --font-size-small: 1em; 
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Your dark mode variables */
+    color-scheme:light dark;
+    --primary-color: #410C00; 
+    --secondary-color: #A0522D; 
+    --accent-color: #f0b243; 
+    --background-color: #ffffff; 
+    --background-dark-color: #1a1a1a; 
+    --text-color: #333333; 
+    --text-color2: #ffffff;
+    --text-color-light: #ffffff;
+    --link-color: #210082; 
+    --link-hover-color: #ffcc00; 
+    --button-color: #210082; 
+    --button-hover-color: #ffcc00; 
+  }
+}
+
+
+
+
+/* algemene styling */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--heading-font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-weight: bold;
+  box-sizing: border-box;
+
+
+}
+
+
+header {
+  background-color: var(--primary-color);
+  font-family: var(--heading-font-family);
+  height:4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+  height: 5em;
+  padding: 1em;
+}
+
+
+section {
+  padding: 1em;
+}
+
+
+
+h1 {
+  margin: 0;
+}
+
+
+h2 {
+  text-transform: uppercase;
+}
+
+
+h3 {
+  text-transform: uppercase;
+  color: var(--text-color2);
+}
+
+
+button {
+  border: none;
+  color: var(--accent-color);
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+
+
+
+
+p{
+  color: var(--text-color-light);
+}
+
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--link-color);
+  color:var(--text-color-light);  
+  padding: 1em 2em ;
+  border-radius: 50em;
+  width:fit-content;
+  transition: transform 1s ease;
+}
+
+
+a:hover {
+  background-color: var(--link-hover-color);
+  color:var(--link-color);
+} 
+
+
+
+
+
+
+  /* screen reader help */
+  button:focus {
+    outline: 2px solid green;
+    border-radius: .5em;
+  }
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+/* logo nav */
+h1 a {
+    background-color:transparent;
+  }
+  
+  h1 a img {
+    max-width: 7.5em; 
+    background-color: transparent;
+    flex: 0 0 1em;
+  }
+  
+  
+  
+
+  
+  header button{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  header button img {
+    width: 1.25em; 
+    height: auto;
+  }
+
+
+  header a {
+    background: transparent;
+    padding: 0;
+  }
+  
+  header nav a:hover { 
+    color: var(--link-hover-color); 
+    background: transparent;
+  }
+  
+  
+  header h1 img{
+    max-width: 3.5em;
+    display: flex;
+    align-items: center;
+  }
+
+
+  header > a:first-of-type {
+    order: -1; 
+  }
+
+
+
+
+nav.toonMenu ul:nth-of-type(2) a{
+    font-size: var(--font-size-small);
+  }
+  
+  nav.toonMenu ul:nth-of-type(2) {
+    gap: 1em;
+  }
+  
+  
+  nav button {
+    align-self: flex-end;
+    height: 5em;
+  }
+  
+  
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center; 
+  }
+  
+  nav a {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  nav a:hover{
+    color:var(--background-dark-color);
+  }
+  
+  
+  nav ul li a img{
+    color: var(--background-color);
+    height: 2.2em;
+  }
+
+
+
+
+
+
+nav {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    transform: translateX(100%);
+    z-index: 998; 
+    }
+    
+    nav.toonMenu {
+      transform: translateX(0%);
+      justify-content: flex-start;
+      display:flex;
+      gap:2em;
+      padding-left:1em;
+    }
+    
+    nav.toonMenu a{
+      font-size: 2.2em;
+
+    }
+    
+    nav.toonMenu ul{
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Algemene styling voor de footer */
+footer {
+  background: var(--primary-color);
+  color: var(--text-color2);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Secties binnen de footer */
+footer > section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: var(--font-size-small);
+}
+
+/* site informatie footer */
+footer section:nth-of-type(4) {
+  max-width: 40em;
+  gap:0;
+  font-size: 1em;
+}
+
+
+/* gele logo footer, eerste */
+footer section:first-of-type{
+  padding: 0;
+}
+
+
+footer section:nth-of-type(3){
+  display: flex;
+  flex-direction: row;
+}
+
+  
+footer a{
+  background: none;
+  padding: 0;
+
+}
+
+footer a:hover{
+  background: none;
+  color: var(--link-hover-color);
+  
+
+}
+
+
+
+
+
+
+/* eerste footer */
+footer section :nth-of-type(1) nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+footer section:nth-of-type(1) nav {
+
+  flex-direction: row;
+  transform: none;
+  position: relative;
+  background-color: var(--accent-color);
+  align-items: center;
+}
+
+footer nav section:nth-of-type(1) a {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer img {
+  max-width: 6em;
+
+}
+
+/* Navigatiesectie (eerste sectie met logo en links) */
+footer > section:first-of-type nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  min-height: 7em;
+  row-gap: .1em;
+  justify-content: start;
+  padding-left: 1em;
+}
+
+
+
+footer > section:first-of-type nav a {
+  color: var(--background-dark-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tweeedde foooter */
+/* Social media iconen */
+footer section:nth-of-type(2) nav {
+
+  gap: 2em;
+  
+  position: static;
+  transform: none;
+  background: none;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0;
+  font-size: 1em;
+}
+
+footer ul a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+/* Knop styling (laatste sectie) */
+footer > section:last-of-type a {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border: 0.2em solid #fff;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
