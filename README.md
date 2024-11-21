@@ -70,12 +70,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
   <img src="readme-images/structuur_main.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
 
 
@@ -119,10 +113,7 @@ vragen:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  site begint een begin te krijgen, nog lastig om te weten wanneer ik moet beginnen en ken veel elementen niet meer....
 
 </details>
 
@@ -152,9 +143,7 @@ vragen:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+gaat een stuk beter, de site begint wat meer vorm te krijgen, maak mij wel erg druk om het later scalable maken voor andere formaten.
 - ...
 
 </details>
@@ -170,6 +159,8 @@ vragen:
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  Uit de tweedde test is gebleken dat er nu wel met de screenreader door de pagina heen gegaan kan worden. kleur verschillen zijn beter. afbeeldingen hebben namen.
 
 </details>
 
@@ -199,10 +190,7 @@ vragen:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  het gaat stukken beter, we hebben gekeken naar grid en hoe ik dat beter kon toepassen wat ik nu nog helemaal niet deed en daardoor erg in de knoei kwam. verder moet er aan de structuur gewerkt worden szodat het overzichtelijk blijft en bewerkbaar.
 
 </details>
 
