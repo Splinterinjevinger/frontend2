@@ -58,6 +58,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  1. h1 en h2 iomgedraaid
+  2. logo moet h1 worden
+  3. geen alt bij afbeeldingen
+  4. geen audio bij video
+  5. autoplay staat standaard aan.
+  6. button kleur valt weg bij bruine achtergrond
+
+
 </details>
 
 
@@ -127,8 +135,7 @@ vragen:
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+basi van de html staat zo goed als, moet nog wel veel gesrtyled worden.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -160,7 +167,7 @@ gaat een stuk beter, de site begint wat meer vorm te krijgen, maak mij wel erg d
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-  Uit de tweedde test is gebleken dat er nu wel met de screenreader door de pagina heen gegaan kan worden. kleur verschillen zijn beter. afbeeldingen hebben namen.
+  Uit de tweedde test is gebleken dat er nu wel met de screenreader door de pagina heen gegaan kan worden. kleur verschillen zijn beter. afbeeldingen hebben namen. h1 en h2 vaak omgedraaid, nu verholpen. 
 
 </details>
 
@@ -209,6 +216,9 @@ gaat een stuk beter, de site begint wat meer vorm te krijgen, maak mij wel erg d
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
+
+  ik hgeb geleerd te stylen met grid, css positioneren.
+
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
